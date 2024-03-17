@@ -8,13 +8,7 @@
     overflow: hidden;
     font-family: 'Inter', sans-serif;
 }
-header{
-    background: #f4f4fc;
-}
-body{
-    background: #f4f4fc;
-}
-.fin{
+header,body,.fin{
     background: #f4f4fc;
 }
 .logo{
@@ -24,8 +18,13 @@ body{
     width: 120px;
     background: #f4f4fc;
 }
+.githubicon{
+    width: 80%;
+    padding-bottom: 40px;
+}
 main{
     display: flex;
+    flex-wrap: wrap;
     width: 84%;
     height: 800px;
     margin: 0 10%;
@@ -36,13 +35,12 @@ main{
 .programa{
     background: #f4f4fc;
     margin: auto;
-    border-radius: 50px;
     height: 750px;
 }
 .textoPrincipal{
     display: flex;
     resize: none;
-    margin: 20px auto;
+    margin: 9px;
     background: #f4f4fc;
     color: #0A3871;
     min-width: 535px;
@@ -52,7 +50,7 @@ main{
     /*border: 2px solid black;*/
     overflow: auto;
     border: none;
-    cursor: pointer;
+    cursor: text;
     font-size: 150%;
 }
 .textoPrincipal:focus{
@@ -62,7 +60,6 @@ main{
     color: #0A3871;
 }
 .aviso{
-    margin-left: 20px;
     color: rgb(59, 57, 57);
 }
 .aviso p{
