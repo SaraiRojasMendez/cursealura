@@ -12,12 +12,18 @@ function encriptar(){
     ocultarAdelante();
     var textoPrincipal = recuperarTexto();
     resultado.textContent = encriptarTexto(textoPrincipal);
+    if (textoPrincipal == "") {
+        alert("No ingresaste ningún texto");
+    }
 }
 
 function desencriptar(){
     ocultarAdelante();
     var textoPrincipal = recuperarTexto();
     resultado.textContent = desencriptarTexto(textoPrincipal);
+    if (textoPrincipal == "") {
+        alert("No ingresaste ningún texto");
+    }
 }
 
 function recuperarTexto(){
